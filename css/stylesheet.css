@@ -44,8 +44,29 @@ body {
     top: 0px;
     left: 0px;
     
-    transition: all 4s linear;
+    transition: all 1s ease;
 }
+
+#door1{
+    top: 224px;
+    left: 224px;
+    width: 16px;
+    height: 32px;
+    background-color: magenta;
+}
+
+#door2{
+    top: 336px;
+    left: 592px;
+    width: 48px;
+    height: 32px;
+    background-color: magenta;
+}
+
+
+
+
+
 
 
 @keyframes pulsate {
