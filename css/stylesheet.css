@@ -1,7 +1,13 @@
 body {
     font-family: 'Quicksand', sans-serif;
 
-    background-color: gray;
+    /* background-color: gray; */
+    background-image: url("https://i.kym-cdn.com/photos/images/facebook/001/318/180/0eb.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-y: -300px;
+
     display: grid;
     grid-template-columns: auto 800px auto;
 }
@@ -36,18 +42,14 @@ body {
     z-index: 2;
 }
 
-#tilemap {
-
-}
-
 #player {
     top: 0px;
     left: 0px;
-    
+
     transition: all 1s ease;
 }
 
-#door1{
+#door1 {
     top: 224px;
     left: 224px;
     width: 16px;
@@ -55,7 +57,7 @@ body {
     background-color: magenta;
 }
 
-#door2{
+#door2 {
     top: 336px;
     left: 592px;
     width: 48px;
