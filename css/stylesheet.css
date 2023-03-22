@@ -1,3 +1,63 @@
-body{
-    background-color: green;
+body {
+    font-family: 'Quicksand', sans-serif;
+
+    background-color: gray;
+    display: grid;
+    grid-template-columns: auto 800px auto;
+}
+
+#mainTitle {
+    grid-column-start: 2;
+    text-align: center;
+}
+
+#gameWindow {
+    position: relative;
+    width: 800px;
+    height: 592px;
+    grid-column-start: 2;
+    background-color: aqua;
+}
+
+.background {
+    position: absolute;
+    z-index: 0;
+}
+
+.character {
+    animation: 3s pulsate alternate ease-in-out infinite;
+
+    position: absolute;
+    z-index: 1;
+}
+
+.foreground {
+    position: absolute;
+    z-index: 2;
+}
+
+#tilemap {
+
+}
+
+#player {
+    top: 0px;
+    left: 0px;
+    
+    transition: all 4s ease;
+}
+
+
+@keyframes pulsate {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }

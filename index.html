@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Click yourself</title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="css\stylesheet.css">
 </head>
+
 <body>
-    
+    <h1 id="mainTitle"></h1>
+    <div id="gameWindow">
+        <!-- Foreground -->
+
+        <!-- Character -->
+        <div id="player" class="character">
+            <img id="playerImg" src="https://th.bing.com/th/id/R.d641ca4ee0e8695eeec25e85eacc8d26?rik=vzcl2aLF9D5xHQ&pid=ImgRaw&r=0" alt="player" width="16" height="16">
+        </div>
+        <!-- Background -->
+        <div id="tilemap" class="background">
+            <img id="tilemapImg" src="img\SD Praktijk Tilemap.png" alt="town">
+        </div>
+
+    </div>
 </body>
-<script src="main.js"></script>
+<script src="js\main.js"></script>
+
 </html>
