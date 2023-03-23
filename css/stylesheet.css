@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
 body {
     font-family: 'Quicksand', sans-serif;
 
@@ -15,10 +17,13 @@ body {
 #mainTitle {
     grid-column-start: 2;
     text-align: center;
+    text-shadow: 1px 1px 0px white;
 }
 
 #gameWindow {
     position: relative;
+    float: left;
+    margin: auto;
     width: 800px;
     height: 592px;
     grid-column-start: 2;
@@ -43,8 +48,11 @@ body {
 }
 
 #player {
-    top: 0px;
-    left: 0px;
+    top: 160px;
+    left: 277px;
+
+    box-shadow: 0px 0px 10px white;
+    background-color: rgba(255, 255, 255, 0.377);
 
     transition: all 1s ease;
 }
@@ -54,7 +62,6 @@ body {
     left: 224px;
     width: 16px;
     height: 32px;
-    background-color: magenta;
 }
 
 #door2 {
@@ -62,13 +69,40 @@ body {
     left: 592px;
     width: 48px;
     height: 32px;
-    background-color: magenta;
+}
+
+#dialogueBox {
+    font-family: 'Silkscreen', cursive;
+
+    grid-column-start: 2;
+
+    margin: auto;
+
+    width: 500px;
+    height: 100px;
+
+    border: 6px solid white;
+    background-color: black;
+
+    color: white;
+
+    font-size: 20px;
 }
 
 
+.disabled {
+    visibility: collapse;
+}
 
-
-
+.typed {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing;
+    animation-duration: 1.5s;
+    animation-timing-function: steps(30, end);
+    animation-fill-mode: forwards;
+}
 
 
 @keyframes pulsate {
@@ -82,5 +116,15 @@ body {
 
     100% {
         transform: translateY(0px);
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
     }
 }
