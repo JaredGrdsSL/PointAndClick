@@ -30,7 +30,7 @@ gameWindow.onclick = function (e) {
             dialogueBox.classList.remove("disabled");
             dialogueBox.classList.add("typed");
             door2Audio.play();
-            showSpeech("(You feel an overbearing presence telling you not to go in.)")
+            showSpeech("<You feel an overbearing presence telling you not to go in>")
             break;
         default:
             dialogueBox.classList.add("disabled");
