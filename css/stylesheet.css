@@ -71,6 +71,20 @@ body {
     height: 32px;
 }
 
+#door3 {
+    top: 224px;
+    left: 320px;
+    width: 16px;
+    height: 32px;
+}
+
+#treePrank {
+    top: 530px;
+    left: 2px;
+    width: 128px;
+    height: 60px;
+}
+
 #dialogueBox {
     font-family: 'Silkscreen', cursive;
 
