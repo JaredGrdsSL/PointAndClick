@@ -1,6 +1,5 @@
 document.getElementById('mainTitle').innerText = "Haunt 'em John!";
-document.getElementById('tilemapImg').setAttribute('draggable', false);
-document.getElementById('playerImg').setAttribute('draggable', false);
+
 
 const player = document.getElementById('player');
 const gameWindow = document.getElementById('gameWindow');
