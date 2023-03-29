@@ -12,6 +12,8 @@ const dialogueBox = document.getElementById('dialogueBox');
 const playerOffset = 8;
 
 let door3locked = true;
+let door3count = 0; // count how many times door 3 has been clicked
+
 
 dialogueBox.classList.add("disabled");
 
