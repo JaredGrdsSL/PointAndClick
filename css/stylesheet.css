@@ -49,6 +49,11 @@ body {
     z-index: 2;
 }
 
+.foregroundSmallHouse {
+    position: absolute;
+    z-index: 2;
+}
+
 #player {
     top: 160px;
     left: 277px;
@@ -58,6 +63,8 @@ body {
 
     transition: all 1s ease;
 }
+
+/* Outdoors */
 
 #door1 {
     top: 224px;
@@ -87,6 +94,26 @@ body {
     height: 60px;
 }
 
+/* SmallHouse */
+
+#fridge {
+    top: 224px;
+    left: 224px;
+    width: 16px;
+    height: 32px;
+
+    background-color: magenta;
+}
+
+#exit {
+    top: 336px;
+    left: 592px;
+    width: 32px;
+    height: 32px;
+
+    background-color: magenta;
+}
+
 #dialogueBox {
     font-family: 'Silkscreen', cursive;
 
@@ -104,7 +131,6 @@ body {
 
     font-size: 20px;
 }
-
 
 .disabled {
     visibility: collapse;
