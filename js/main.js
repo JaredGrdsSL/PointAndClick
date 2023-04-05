@@ -56,7 +56,7 @@ gameWindow.onclick = function (e) {
                 if (door3locked) {
                     dialogueBox.classList.remove("disabled");
                     dialogueBox.classList.add("typed");
-                    showSpeech("<The door is locked>");
+                    showSpeech("<The door is locked>\r\n<Perhaps you can phase through?>");
                 } else if (!door3locked) {
                     inDoor3 = true;
                     dialogueBox.classList.remove("disabled");
@@ -64,7 +64,7 @@ gameWindow.onclick = function (e) {
                     showSpeech("<Enter? (click again)>");
                 }
 
-                if (door3count > 2 && door3locked) {
+                if (door3count > 0 && door3locked) {
                     door3locked = false;
                     inDoor3 = true;
                 }
@@ -94,6 +94,11 @@ gameWindow.onclick = function (e) {
         fridge.classList.remove('disabled');
         exit.classList.add('foreground');
         fridge.classList.add('foreground');
+
+        player.style.top = 312 + "px";
+        player.style.left = 390 + "px";
+
+
 
         switch (e.target.id) {
             case "exit":
