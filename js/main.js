@@ -95,9 +95,6 @@ gameWindow.onclick = function (e) {
         exit.classList.add('foreground');
         fridge.classList.add('foreground');
 
-        player.style.top = 312 + "px";
-        player.style.left = 390 + "px";
-
 
 
         switch (e.target.id) {
