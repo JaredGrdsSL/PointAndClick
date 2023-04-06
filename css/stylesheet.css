@@ -101,17 +101,13 @@ body {
     left: 432px;    
     width: 16px;
     height: 32px;
-
-    background-color: magenta;
 }
 
 #exit {
-    top: 336px;
-    left: 592px;
+    top: 319px;
+    left: 384px;
     width: 32px;
     height: 32px;
-
-    background-color: magenta;
 }
 
 #dialogueBox {
