@@ -3,6 +3,7 @@ document.getElementById('mainTitle').innerText = "Haunt 'em John!";
 document.getElementById('overworldImg').draggable = false;
 document.getElementById('playerImg').draggable = false;
 
+const BGTheme = document.getElementById('BGTheme');
 const player = document.getElementById('player');
 const gameWindow = document.getElementById('gameWindow');
 const door1Audio = document.getElementById('door1Audio');
@@ -18,6 +19,7 @@ let inDoor3 = false;
 
 let door3count = 0; // count how many times door 3 has been clicked
 
+BGTheme.play();
 
 
 
