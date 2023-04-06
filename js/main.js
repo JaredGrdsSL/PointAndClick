@@ -19,9 +19,8 @@ let inDoor3 = false;
 
 let door3count = 0; // count how many times door 3 has been clicked
 
-BGTheme.play();
-
 gameWindow.onclick = function (e) {
+    BGTheme.play();
     if (!inDoor3) {
         var rect = gameWindow.getBoundingClientRect();
         var x = e.clientX - rect.left; // mouse x
